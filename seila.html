@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<?php
+
+$datetime = new DateTime( "now", new DateTimeZone( "America/Sao_Paulo" ) );
+$hora = $datetime->format( 'H' );
+
+if($hora <= 10);
+	echo "Bom dia";
+	echo '<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.portalriomaina.com%2F03-de-maio-dia-do-sol%2F&psig=AOvVaw0Lx9vvbHX2EfAE4_j0TnnZ&ust=1728056801525000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKC1qMDH8ogDFQAAAAAdAAAAABAE"></img>';
+elseif($hora => 12 and <=18):
+	echo "Boa tarde";
+	echo '<img src="https://www.google.com/imgres?q=tarde&imgurl=https%3A%2F%2Fimg.freepik.com%2Ffotos-premium%2Ffim-da-tarde-natureza-paisagem-foto-de-um-rio-ao-por-do-sol_566982-137.jpg&imgrefurl=https%3A%2F%2Fbr.freepik.com%2Ffotos-premium%2Ffim-da-tarde-natureza-paisagem-foto-de-um-rio-ao-por-do-sol_41664902.htm&docid=wHpj6e18eqA1TM&tbnid=Z2OdmQuXebqJ1M&vet=12ahUKEwjz2fTJx_KIAxWKHbkGHZcEDqMQM3oECB0QAA..i&w=626&h=417&hcb=2&ved=2ahUKEwjz2fTJx_KIAxWKHbkGHZcEDqMQM3oECB0QAA"></img>';
+else:
+	echo "Boa noite";
+	echo '<img src="https://www.google.com/imgres?q=noite&imgurl=https%3A%2F%2Fwww.aluralingua.com.br%2Fartigos%2Fassets%2Fnight.jpg&imgrefurl=https%3A%2F%2Fwww.aluralingua.com.br%2Fartigos%2Fcomo-dizer-boa-noite-em-ingles&docid=1nxjXpll-7_W-M&tbnid=g3FpYpZq5QqYcM&vet=12ahUKEwid7oPTx_KIAxWoLbkGHTG6MmYQM3oECBsQAA..i&w=1200&h=730&hcb=2&ved=2ahUKEwid7oPTx_KIAxWoLbkGHTG6MmYQM3oECBsQAA"></img>';
+endif;
+
+?>
+</body>
+</html>
